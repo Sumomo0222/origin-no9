@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ORIGIN No.9 九号原产 · 单一产地精品巧克力</title>
+  <meta name="description" content="ORIGIN No.9 九号原产——虚构的单一产地精品巧克力工作室。六块土地，六种风味，自组礼盒与产地明信片。" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231c352a'/%3E%3Ctext x='16' y='22' font-family='serif' font-size='17' fill='%23d2a95c' text-anchor='middle'%3E9%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+  <!-- ====== 装饰 SVG 定义（手绘植物插画 / 邮戳 / 蜡封） ====== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <!-- 可可荚：藤挂果实，长卵形 + 纵棱 -->
+      <symbol id="sym-pod" viewBox="-34 -74 68 148">
+        <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <path d="M0,-64 C2,-70 5,-71 7,-68" />
+          <path d="M-24,-46 C-26,-20 -26,18 -16,48 C-10,62 -4,66 0,66 C4,66 10,62 16,48 C26,18 26,-20 24,-46 C22,-58 12,-64 0,-64 C-12,-64 -22,-58 -24,-46 Z" />
+          <path d="M-13,-59 C-17,-30 -17,26 -9,54" />
+          <path d="M-6.5,-63 C-9,-30 -9,28 -4.5,62" />
+          <path d="M0,-64 C0,-30 0,28 0,64" />
+          <path d="M6.5,-63 C9,-30 9,28 4.5,62" />
+          <path d="M13,-59 C17,-30 17,26 9,54" />
+        </g>
+      </symbol>
+
+      <!-- 叶枝 -->
+      <symbol id="sym-branch" viewBox="0 0 120 46">
+        <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M4,38 C34,30 78,20 114,8" />
+          <path d="M30,26 C34,16 42,10 52,8 C48,18 42,24 32,27 Z" />
+          <path d="M58,20 C64,12 72,8 82,8 C78,18 70,23 60,23 Z" />
+          <path d="M24,32 C20,24 20,16 24,10 C30,16 32,24 28,31 Z" />
+        </g>
+      </symbol>
+
+      <!-- 可可豆 -->
+      <symbol id="sym-bean" viewBox="0 0 30 44">
+        <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M15,3 C23,10 25,22 20,32 C17,38 12,41 10,41 C6,36 4,24 8,14 C10,8 12,4 15,3 Z" />
+          <path d="M15,6 C14,18 13,30 11,38" />
+        </g>
+      </symbol>
+
+      <!-- 圆形邮戳 -->
+      <symbol id="sym-postmark" viewBox="0 0 120 120">
+        <g fill="none" stroke="currentColor">
+          <circle cx="60" cy="60" r="56" stroke-width="1.6" />
+          <circle cx="60" cy="60" r="42" stroke-width="1" stroke-dasharray="3 3" />
+          <path id="pm-arc" d="M60,18 a42,42 0 1,1 -0.01,0" fill="none" stroke="none" />
+          <text font-size="11.5" letter-spacing="3.1" fill="currentColor" stroke="none" font-family="Marcellus, serif">
+            <textPath href="#pm-arc" startOffset="0">ORIGIN No.9 · SINGLE ESTATE CACAO ·</textPath>
+          </text>
+          <text x="60" y="56" text-anchor="middle" font-size="19" fill="currentColor" stroke="none" font-family="Marcellus, serif" letter-spacing="1">No.9</text>
+          <text x="60" y="74" text-anchor="middle" font-size="8.5" letter-spacing="2.4" fill="currentColor" stroke="none" font-family="Marcellus, serif">ATLAS BATCH</text>
+        </g>
+      </symbol>
+
+      <!-- 蜡封：波纹圆 + 9 -->
+      <symbol id="sym-seal" viewBox="0 0 120 120">
+        <g fill="none" stroke="currentColor">
+          <circle cx="60" cy="60" r="52" stroke-width="2.4" stroke-dasharray="2.2 4.6" />
+          <circle cx="60" cy="60" r="44" stroke-width="1.4" />
+          <circle cx="60" cy="60" r="37" stroke-width="0.8" stroke-dasharray="1.4 3" />
+          <text x="60" y="76" text-anchor="middle" font-size="42" fill="currentColor" stroke="none" font-family="Marcellus, serif">9</text>
+          <text x="60" y="38" text-anchor="middle" font-size="9.5" letter-spacing="2.6" fill="currentColor" stroke="none" font-family="Marcellus, serif">ORIGIN</text>
+        </g>
+      </symbol>
+
+      <!-- 邮票框（可可荚插画 + 面值） -->
+      <symbol id="sym-stamp" viewBox="0 0 150 180">
+        <rect x="4" y="4" width="142" height="172" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 3.2" />
+        <rect x="12" y="12" width="126" height="156" fill="none" stroke="currentColor" stroke-width="0.8" />
+        <g transform="translate(75,86) scale(0.86)" color="currentColor">
+          <use href="#sym-pod" />
+        </g>
+        <text x="75" y="36" text-anchor="middle" font-size="15" letter-spacing="3" fill="currentColor" stroke="none" font-family="Marcellus, serif">ORIGIN No.9</text>
+        <text x="75" y="158" text-anchor="middle" font-size="10" letter-spacing="2.6" fill="currentColor" stroke="none" font-family="Marcellus, serif">SINGLE ESTATE · 50 G</text>
+      </symbol>
+
+      <!-- 礼盒小图标 -->
+      <symbol id="sym-giftbox" viewBox="0 0 48 48">
+        <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <rect x="7" y="18" width="34" height="24" />
+          <rect x="4" y="12" width="40" height="6" />
+          <path d="M24,12 L24,42" />
+          <path d="M24,12 C18,12 14,8 16,5 C18,3 22,5 24,9 C26,5 30,3 32,5 C34,8 30,12 24,12 Z" />
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ====== 页头 ====== -->
+  <header class="header">
+    <div class="wrap header-inner">
+      <a href="#/" class="logo" aria-label="ORIGIN No.9 首页">
+        <span class="latin">ORIGIN <span class="no9">No.9</span></span>
+        <small>九号原产</small>
+      </a>
+      <nav class="nav" id="mainNav">
+        <a href="#origins" data-nav="origins">产地地图</a>
+        <a href="#shop" data-nav="shop">全部风味</a>
+        <a href="#/giftbox" data-nav="giftbox">组装礼盒</a>
+        <a href="#story" data-nav="story">品牌故事</a>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-btn" id="cartOpen" aria-label="打开购物车">
+          <svg width="15" height="15" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4"><use href="#sym-giftbox"/></svg>
+          购物车 <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <button class="burger" id="burger" aria-label="菜单"><div><span></span><span></span><span></span></div></button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#origins">产地地图</a>
+      <a href="#shop">全部风味</a>
+      <a href="#/giftbox">组装礼盒</a>
+      <a href="#story">品牌故事</a>
+    </nav>
+  </header>
+
+  <!-- ====== 视图容器 ====== -->
+  <main id="view" class="view"></main>
+
+  <!-- ====== 页脚 ====== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a href="#/" class="logo"><span class="latin">ORIGIN <span class="no9">No.9</span></span></a>
+          <p class="footer-desc">一块巧克力，只讲一块土地的事。六块可可带的土地，九号庄园的小批量精炼，2026 冬季批次正在发货。</p>
+        </div>
+        <div class="footer-col">
+          <h4>探索</h4>
+          <a href="#origins">产地地图</a>
+          <a href="#shop">全部风味</a>
+          <a href="#/giftbox">组装礼盒</a>
+          <a href="#story">品牌故事</a>
+        </div>
+        <div class="footer-col">
+          <h4>工作室</h4>
+          <a href="javascript:void(0)">上海 · 永嘉路九号</a>
+          <a href="javascript:void(0)">周三至周日 11:00–19:00</a>
+          <a href="javascript:void(0)">atelier@origin-no9.example</a>
+        </div>
+        <div class="footer-col">
+          <h4>服务</h4>
+          <a href="javascript:void(0)">企业订制与批量礼盒</a>
+          <a href="javascript:void(0)">运输与冷链说明</a>
+          <a href="javascript:void(0)">风味档案下载（虚构）</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2019–2026 ORIGIN No.9 九号原产 · 本站为虚构品牌演示</span>
+        <span>庄园、人物、认证与价格均为虚构 · 不代表任何真实奖项或组织</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====== 购物车抽屉 ====== -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="购物车">
+    <div class="cd-head">
+      <div>
+        <span class="latin">YOUR NINE</span>
+        <h3 id="cartTitle">购物车</h3>
+      </div>
+      <button class="cd-close" id="cartClose" aria-label="关闭购物车">✕</button>
+    </div>
+    <div class="cd-items" id="cartItems"></div>
+    <div class="cd-foot" id="cartFoot"></div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
